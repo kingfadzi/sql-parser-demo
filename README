@@ -1,0 +1,53 @@
+========
+Overview
+========
+Simple project showing basic usage of the Akiban SQL Parser.
+
+The demo, currently, will scan any valid SQL statement any print a referenced
+column to stdout. This shows usage of the simplest way to consume a parsed
+query tree, the com.akiban.sql.parser.Visitor interface.
+
+
+==========
+Dependency
+==========
+The parser is not yet in Maven Central so the easiest way to use it is to
+manually install it in your local repository.
+
+For example,
+$ cd /tmp
+$ wget https://launchpad.net/akiban-sql-parser/trunk/1.0.11/+download/akiban-sql-parser-1.0.11.tar.gz
+$ tar xzf akiban-sql-parser-1.0.11.tar.gz
+$ mvn install:install-file -Dfile=akiban-sql-parser-1.0.11/akiban-sql-parser-1.0.11.jar -DgroupId=com.akiban -DartifactId=akiban-sql-parser -Dversion=1.0.11 -Dpackaging=jar
+
+
+=====
+Build
+=====
+$ mvn package
+
+
+=======
+Running
+=======
+--------------------
+Parse standard input
+--------------------
+$ echo "SELECT x FROM t" |java -jar target/ParserDemo.jar
+Statement: CursorNode
+  x
+
+-----------------------------------------------
+Run the internal demo and echo input statements
+-----------------------------------------------
+$ java -jar target/ParserDemo.jar --demo --echo
+...
+
+-------------------------------------------
+Parse a file containing one or more queries
+-------------------------------------------
+$ java -jar target/ParserDemo.jar --file two_queries.sql 
+Statement: CursorNode
+  hello
+Statement: InsertNode
+  state
