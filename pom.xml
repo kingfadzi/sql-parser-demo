@@ -20,7 +20,7 @@
         <dependency>
             <groupId>com.akiban</groupId>
             <artifactId>akiban-sql-parser</artifactId>
-            <version>1.0.11</version>
+            <version>1.0.14</version>
         </dependency>
     </dependencies>
 

@@ -15,9 +15,9 @@ The parser is not yet in Maven Central. The easiest way to use it right now is
 to manually install it in your local repository. For example,
 
 $ cd /tmp
-$ wget https://launchpad.net/akiban-sql-parser/trunk/1.0.11/+download/akiban-sql-parser-1.0.11.tar.gz
-$ tar xzf akiban-sql-parser-1.0.11.tar.gz
-$ mvn install:install-file -Dfile=akiban-sql-parser-1.0.11/akiban-sql-parser-1.0.11.jar -DgroupId=com.akiban -DartifactId=akiban-sql-parser -Dversion=1.0.11 -Dpackaging=jar
+$ curl -s -L -O https://launchpad.net/akiban-sql-parser/trunk/1.0.14/+download/akiban-sql-parser-1.0.14.tar.gz
+$ tar xzf akiban-sql-parser-1.0.14.tar.gz
+$ mvn install:install-file -Dfile=akiban-sql-parser-1.0.14/akiban-sql-parser-1.0.14.jar -DgroupId=com.akiban -DartifactId=akiban-sql-parser -Dversion=1.0.14 -Dpackaging=jar
 
 
 ==========
