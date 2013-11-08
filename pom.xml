@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.nathanlws</groupId>
-    <artifactId>akiban-parser-demo</artifactId>
+    <artifactId>fdb-sql-parser-demo</artifactId>
     
-    <name>akiban-parser-demo</name>
+    <name>SQL Parser Demo</name>
     <version>1.0</version>
     <packaging>jar</packaging>
 
@@ -17,10 +17,11 @@
     </properties>
 
     <dependencies>
+        <!-- Project was renamed from com.akiban, but new release not yet available in Central --> 
         <dependency>
             <groupId>com.akiban</groupId>
             <artifactId>akiban-sql-parser</artifactId>
-            <version>1.0.14</version>
+            <version>1.0.16</version>
         </dependency>
     </dependencies>
 
