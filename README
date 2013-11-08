@@ -1,23 +1,12 @@
 ========
 Overview
 ========
-Simple project showing basic usage of the Akiban SQL Parser.
+Simple project showing basic usage of the FoundationDB SQL Parser:
+https://github.com/FoundationDB/sql-parser
 
-The demo will scan any valid SQL statement any print a referenced column to
-stdout. This shows usage of the simplest way to consume a parsed query tree,
-the com.akiban.sql.parser.Visitor interface.
-
-
-==========
-Dependency
-==========
-The parser is not yet in Maven Central. The easiest way to use it right now is
-to manually install it in your local repository. For example,
-
-$ cd /tmp
-$ curl -s -L -O https://launchpad.net/akiban-sql-parser/trunk/1.0.14/+download/akiban-sql-parser-1.0.14.tar.gz
-$ tar xzf akiban-sql-parser-1.0.14.tar.gz
-$ mvn install:install-file -Dfile=akiban-sql-parser-1.0.14/akiban-sql-parser-1.0.14.jar -DgroupId=com.akiban -DartifactId=akiban-sql-parser -Dversion=1.0.14 -Dpackaging=jar
+The demo will scan any valid SQL statement and print all preferenced columns to
+stdout. This shows the the simplest way to consume a parsed query tree,
+the com.foundationdb.sql.parser.Visitor interface.
 
 
 ==========
